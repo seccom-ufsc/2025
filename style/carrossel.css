@@ -1,0 +1,9 @@
+.carrossel-item{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5%;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  
+}
