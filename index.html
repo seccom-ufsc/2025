@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SECCOM 2024</title>
-  <link rel="icon" type="image/x-icon" href="/img/tmp-logo.png">
-  
-  <link rel="stylesheet" href="style/style.css">
-  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.css' rel='stylesheet' />
 
+  <link rel="icon" type="image/x-icon" href="/img/tmp-logo.png">
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  
+  <!-- Full Calendar -->
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.css' rel='stylesheet' />
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.15/index.global.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.15/index.global.min.js'></script>
-  
-  <script src="script/matrix.js" defer></script>
   <script src="script/calendar.js" defer></script>
+
+  <!-- Matrix -->
+  <script src="script/matrix.js" defer></script>
 </head>
 <body>
 
@@ -57,33 +59,6 @@
     </div>
   </nav>
 
-  <!-- <header class="container-fluid d-flex sticky-top justify-content-between align-items-center">
-    <div class="head d-flex align-items-center">
-      <img src="img/tmp-logo.png" alt="Logo da SECCOM">
-      <span>SECCOM</span>
-    </div>
-
-    <nav id="navigator">
-      <ul class="nav justify-content-end">
-        <li class="nav-item active">
-          <a class="nav-link" href="#inicio">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#program"
-            >Programação</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#palest">Palestrantes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contato">Contato</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header> -->
-  
   <canvas id="canv"></canvas>
   <main
   data-bs-spy="scroll"
@@ -97,7 +72,7 @@
           <h1 class="display-1 d-flex justify-content-between"><span>SECCOM</span><span class="text-primary-emphasis">2024</span></h1>
           <p class="lead">
             Semana Acadêmica da Computação e Sistemas<br>
-            De 6 a 10 de dezembro
+            De 22 a 27 de Setembro
           </p>
           <p>
             A SECCOM é um evento acadêmico que visa incrementar a experiência universitária das graduações em Ciência da Computação e Sistemas de Informação, trazendo palestras e oficinas de conteúdos além dos vistos durante a graduação. Esta edição será online e ocorrerá nos dias 6 a 10 de dezembro, com seus eventos ocorrendo majoritariamente no período da tarde. Você pode assistir as transmissões ao vivo no <a href="https://www.youtube.com/channel/UCva2-CmrvppJlf8jSAK61vw" target="_blank">canal oficial da SECCOM no YouTube</a>.
@@ -123,9 +98,51 @@
 
     <!-- #region CONTATO -->
     <section id="contato" class="container">
-      <h2 class="display-6 text-center">Contato</h2>
+      <h2 class="display-6 text-center">Quer falar com a gente?</h2>
+      <div class="contact-row">
+
+        <a href="https://www.facebook.com/seccom.ufsc" target="_blank">
+          <div class="contact-card">
+            <i class="bi bi-facebook"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/seccom.ufsc/" target="_blank">
+          <div class="contact-card">
+            <i class="bi bi-instagram"></i>
+          </div>
+        </a>
+        <a href="mailto:seccom.ufsc@gmail.com" target="_blank">
+          <div class="contact-card">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+        </a>
+        <a href="https://github.com/seccom-ufsc/" target="_blank">
+          <div class="contact-card">
+            <i class="bi bi-github"></i>
+          </div>
+        </a>
+        <a href="https://discord.gg/zTmGqsh" target="_blank">
+          <div class="contact-card">
+            <i class="bi bi-discord"></i>
+          </div>
+        </a>
+        <a href="https://t.me/seccomufsc" target="_blank">
+          <div class="contact-card">
+            <i class="bi bi-telegram"></i>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCva2-CmrvppJlf8jSAK61vw" target="_blank">
+          <div class="contact-card">
+            <i class="bi bi-youtube"></i>
+          </div>
+        </a>
+
+      </div>
     </section>
     <!-- #endregion -->
+
   </main>
+
+  <footer></footer>
 </body>
 </html>
