@@ -87,6 +87,28 @@
     <section id="program" class="container">
       <h2 class="display-6 text-center">Programação</h2>
       <div id="calendar"></div>
+      <!-- Bootstrap Modal -->
+      <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="eventModalLabel">Event Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="modal-event-title"></p>
+              <p id="modal-event-description"></p>
+              <p id="modal-event-location"></p>
+              <p id="modal-event-start"></p>
+              <p id="modal-event-end"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="#" id="add-to-calendar" class="btn btn-primary" target="_blank">Add to My Calendar</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- #endregion -->
 

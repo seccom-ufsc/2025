@@ -30,8 +30,44 @@ document.addEventListener('DOMContentLoaded', function() {
             list: 'Lista'
         },
         allDayText: 'Dia inteiro',
-        allDaySlot: false
+        allDaySlot: false,
+        eventClick: function(info) {
+            // Prevent the default action (redirect to Google Calendar)
+            info.jsEvent.preventDefault();
+
+            // Populate the event details in the widget
+            document.getElementById('modal-event-title').innerText = "Title: " + info.event.title;
+            document.getElementById('modal-event-description').innerHTML = "<b>Description: </b>" + (info.event.extendedProps.description || 'No description');
+            document.getElementById('modal-event-location').innerText = "Location: " + (info.event.extendedProps.location || 'No location');
+            document.getElementById('modal-event-start').innerText = "Start: " + info.event.start.toLocaleString();
+            document.getElementById('modal-event-end').innerText = "End: " + (info.event.end ? info.event.end.toLocaleString() : 'N/A');
+
+            // Show the event details widget
+            document.getElementById('eventModal').style.display = 'block';
+
+            // Create the Google Calendar event link
+            var addToCalendarLink = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+                "&text=" + encodeURIComponent(info.event.title) +
+                "&dates=" + encodeURIComponent(formatDate(info.event.start)) +
+                "/" + encodeURIComponent(formatDate(info.event.end)) +
+                "&details=" + encodeURIComponent(info.event.extendedProps.description || '') +
+                "&location=" + encodeURIComponent(info.event.extendedProps.location || '') +
+                "&trp=false";
+
+            // var addToCalendarLink = info.event.url;
+
+            document.getElementById('add-to-calendar').href = addToCalendarLink;
+
+            // Show the modal
+            var eventModal = new bootstrap.Modal(document.getElementById('eventModal'));
+            eventModal.show();
+        }
     });
 
     calendar.render();
+
+    // Helper function to format dates for Google Calendar link
+    function formatDate(date) {
+        return date.toISOString().replace(/-|:|\.\d\d\d/g, '');
+    }
 });
