@@ -11945,3 +11945,7 @@ footer {
   border-color: rgb(110, 168, 254) ;
 }
 
+
+.fc-view-harness.fc-view-harness-active {
+  height: 690px !important;
+}
