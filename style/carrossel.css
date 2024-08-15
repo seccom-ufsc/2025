@@ -1,9 +1,27 @@
+.carrossel{
+    font-family: "Roboto Mono", monospace;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
 .carrossel-item{
-    display: inline;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    background-color: #343a40;
+    color: var(--bs-nav-tabs-link-active-color);
+}
+
+.carrossel-item img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
     width: 100px;
     height: 100px;
-    padding: 5%;
-    border: 1px solid blue;    
-    background-color: yellow; 
-  
+    border-radius: 50%;
+    object-fit: cover;
 }
