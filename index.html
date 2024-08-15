@@ -92,15 +92,36 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="eventModalLabel">Detalhes do evento</h5>
+              <h6 class="modal-title" id="eventModalLabel">Detalhes do evento</h6>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p id="modal-event-title"></p>
-              <p id="modal-event-description"></p>
-              <p id="modal-event-location"></p>
-              <p id="modal-event-start"></p>
-              <p id="modal-event-end"></p>
+              <div id="modal-event-title">
+                <!-- <div class="mb-2 mt-3"> -->
+                  <!-- <strong>Título</strong> -->
+                  <h3 id="section-title"></h3>
+                <!-- </div> -->
+              </div>
+              <div id="modal-event-description">
+                <div class="mb-2 mt-3">
+                  <strong>Descrição</strong>
+                </div>
+                <div id="section-description" class="event-section"></div>
+              </div>
+              <div id="modal-event-location">
+                <div class="mb-2 mt-3">
+                  <strong>Local</strong>
+                </div>
+                <div id="section-location" class="event-section"></div>
+              </div>
+              <div class="mb-2 mt-3">
+                <div id="modal-event-start">
+                  <strong>Início: </strong><span id="section-start"></span>
+                </div>
+                <div id="modal-event-end">
+                  <strong>Fim: </strong><span id="section-end"></span>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>

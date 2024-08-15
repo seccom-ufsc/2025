@@ -11949,3 +11949,8 @@ footer {
 .fc-view-harness.fc-view-harness-active {
   height: 690px !important;
 }
+
+div.event-section {
+  padding: 10px;
+  border: 1px solid white;
+}

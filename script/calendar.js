@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             end: '2024-08-17'
         },
         slotMinTime: '10:00:00',
-        slotMaxTime: '22:00:00',
+        slotMaxTime: '23:00:00',
         googleCalendarApiKey: 'AIzaSyAo0eHM7AxQS0v4HZ01CwXdvbq4h-_ZCS4',
         events: {
             googleCalendarId: '28516cb404c13f958c1b24a3e914b13efa359c71f39400b5ae457b0978b45838@group.calendar.google.com'
@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
             info.jsEvent.preventDefault();
 
             // Populate the event details in the widget
-            document.getElementById('modal-event-title').innerText = "Title: " + info.event.title;
-            document.getElementById('modal-event-description').innerHTML = "<b>Description: </b>" + (info.event.extendedProps.description || 'No description');
-            document.getElementById('modal-event-location').innerText = "Location: " + (info.event.extendedProps.location || 'No location');
-            document.getElementById('modal-event-start').innerText = "Start: " + info.event.start.toLocaleString();
-            document.getElementById('modal-event-end').innerText = "End: " + (info.event.end ? info.event.end.toLocaleString() : 'N/A');
+            document.getElementById('section-title').innerHTML = info.event.title;
+            document.getElementById('section-description').innerHTML = (info.event.extendedProps.description || 'No description');
+            document.getElementById('section-location').innerHTML =  (info.event.extendedProps.location || 'No location');
+            document.getElementById('section-start').innerText = info.event.start.toLocaleString();
+            document.getElementById('section-end').innerText = (info.event.end ? info.event.end.toLocaleString() : 'N/A');
 
             // Show the event details widget
             document.getElementById('eventModal').style.display = 'block';
