@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('section-title').innerHTML = info.event.title;
             document.getElementById('section-description').innerHTML = (info.event.extendedProps.description || 'No description');
             document.getElementById('section-location').innerHTML =  (info.event.extendedProps.location || 'No location');
-            document.getElementById('section-start').innerText = info.event.start.toLocaleString();
-            document.getElementById('section-end').innerText = (info.event.end ? info.event.end.toLocaleString() : 'N/A');
+            document.getElementById('section-start').innerText = info.event.start.toLocaleString('pt-BR');
+            document.getElementById('section-end').innerText = (info.event.end ? info.event.end.toLocaleString('pt-BR') : 'N/A');
 
             // Show the event details widget
             document.getElementById('eventModal').style.display = 'block';
@@ -61,7 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show the modal
             var eventModal = new bootstrap.Modal(document.getElementById('eventModal'));
             eventModal.show();
-        }
+        },
+        slotLabelFormat: [
+        {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12:false
+        }]
     });
 
     calendar.render();
