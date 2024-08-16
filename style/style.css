@@ -11908,19 +11908,14 @@ footer {
 
 /* Fullcalendar modifications */
 
-
-.fc-day-today {
-  
-}
-
 /* .fc-col-header-cell {
   background-color: rgb(46, 46, 94);
   } */
   
-  .fc-col-header-cell-cushion {
-    color: rgba(255, 255, 255);
-    text-decoration: none;
-  }
+.fc-col-header-cell-cushion {
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
 
 /* Ajusta  o header do dia atual */
 .fc-day-today {
@@ -11953,4 +11948,9 @@ footer {
 div.event-section {
   padding: 10px;
   border: 1px solid white;
+}
+
+.slick-slide > div {
+  margin-left: 10px;
+  /* min-width: 200px; */
 }
