@@ -11905,3 +11905,52 @@ footer {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Fullcalendar modifications */
+
+
+.fc-day-today {
+  
+}
+
+/* .fc-col-header-cell {
+  background-color: rgb(46, 46, 94);
+  } */
+  
+  .fc-col-header-cell-cushion {
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+  }
+
+/* Ajusta  o header do dia atual */
+.fc-day-today {
+  background-color: rgb(21, 30, 39); /* Yellow background */
+}
+
+.fc .fc-timegrid-col.fc-day-today {
+  /* background-color: #2e2e5e55; */
+  background-color: rgb(44, 62, 80);
+}
+
+.fc-v-event {
+  background-color: #2e2e5e;
+  border: 2px solid #2e2e5e;
+
+  /* background-color: rgb(110, 168, 254);
+  border: 2px solid rgb(110, 168, 254); */
+}
+
+.btn.btn-primary#add-to-calendar {
+  background-color: #2e2e5e !important;
+  border-color: rgb(110, 168, 254) ;
+}
+
+
+.fc-view-harness.fc-view-harness-active {
+  height: 690px !important;
+}
+
+div.event-section {
+  padding: 10px;
+  border: 1px solid white;
+}
