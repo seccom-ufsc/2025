@@ -155,31 +155,79 @@
     <section id="palest" class="container mb-5 pb-3">
       <h2 class="display-6 text-center">Palestrantes</h2>
       <div class = "carrossel">
-        <div class = "carrossel-item ms-3">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
-          <h3>John Doe</h3>
-          <p class="title">CEO & Founder, Example</p>
+        <!-- <div class = "carrossel-item ms-3"> -->
+        <div class="card carrossel-item" style="width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">CEO & Founder, Example.</p>
+            <button type="button"
+              class="btn main-bg-color main-border-color"
+              data-bs-toggle="modal"
+              data-bs-target="#palestModal"
+              data-person="John Doe"
+              data-img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s" >
+              Saiba +
+            </button>
+          </div>
         </div>
-        <div class = "carrossel-item ms-3">
+        <!-- </div> -->
+        <div class = "carrossel-item">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
           <h3>John Doe</h3>
           <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item ms-3">
+        <div class = "carrossel-item">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
           <h3>John Doe</h3>
           <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item ms-3">
+        <div class = "carrossel-item">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
           <h3>John Doe</h3>
           <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item ms-3">
+        <div class = "carrossel-item">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
           <h3>John Doe</h3>
           <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item ms-3">
+        <div class = "carrossel-item">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
           <h3>John Doe</h3>
           <p class="title">CEO & Founder, Example</p></div>
+      </div>
+      <div class="modal fade" id="palestModal" tabindex="-1" aria-labelledby="palestModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="palestModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center">
+                <img id="modal-palest-photo"/>
+              </div>
+              <div id="modal-palest-abstract">
+                <div class="mb-2 mt-3">
+                  <strong>Resumo</strong>
+                </div>
+                <div id="palest-abstract" class="event-section"></div>
+              </div>
+              <div id="modal-palest-lectures">
+                <div class="mb-2 mt-3">
+                  <strong>Eventos</strong>
+                </div>
+                <div id="palest-events" class="event-section"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <p style="margin-right: auto;"><strong>Contatos:</strong></p>
+              <div class="palest-contact-card">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div class="palest-contact-card">
+                <i class="bi bi-github"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- #endregion -->

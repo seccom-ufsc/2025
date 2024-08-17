@@ -11904,6 +11904,21 @@ footer {
   height: 5rem;
 }
 
+.palest-contact-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #2e2e5e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.palest-contact-card i {
+  font-size: 2rem;
+  color: white;
+}
+
 /* MODIFICAÇÕES DE ESTILO DO FULLCALENDAR */
 
 .fc-col-header-cell-cushion {
@@ -11962,13 +11977,6 @@ div.event-section {
   border: 1px solid white;
 }
 
-/* AJUSTES DE ESTILO DO CARROSSEL */
-
-.slick-slide > div {
-  margin-left: 10px;
-  /* min-width: 200px; */
-}
-
 .btn.btn-primary.btn-lg {
   background-color: #2e2e5e;
   border-color: #2e2e5e;
@@ -11977,4 +11985,27 @@ div.event-section {
 
 div.link-section {
   display: flex;
+}
+
+/* AJUSTES DE ESTILO DO CARROSSEL */
+
+.slick-slide > div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+div.carrossel-item {
+  padding: 10px;
+}
+
+.main-bg-color {
+  background-color: #2e2e5e;
+}
+
+.main-bg-color:focus {
+  background-color: #2e2e5e;
+}
+
+.main-border-color {
+  border-color: white;
 }
