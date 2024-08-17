@@ -11904,51 +11904,65 @@ footer {
   height: 5rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* MODIFICAÇÕES DE ESTILO DO FULLCALENDAR */
 
-/* Fullcalendar modifications */
-
-/* .fc-col-header-cell {
-  background-color: rgb(46, 46, 94);
-  } */
-  
 .fc-col-header-cell-cushion {
   color: rgba(255, 255, 255);
   text-decoration: none;
 }
 
-/* Ajusta  o header do dia atual */
+/* Ajuste de cores do dia atual */
 .fc-day-today {
-  background-color: rgb(21, 30, 39); /* Yellow background */
+  background-color: #2e2e5e;
 }
-
 .fc .fc-timegrid-col.fc-day-today {
-  /* background-color: #2e2e5e55; */
-  background-color: rgb(44, 62, 80);
+  background-color: #2e2e5e44;
 }
-
+/* Ajuste de cores do evento */
 .fc-v-event {
   background-color: #2e2e5e;
   border: 2px solid #2e2e5e;
-
-  /* background-color: rgb(110, 168, 254);
-  border: 2px solid rgb(110, 168, 254); */
 }
-
-.btn.btn-primary#add-to-calendar {
-  background-color: #2e2e5e !important;
-  border-color: rgb(110, 168, 254) ;
-}
-
-
+/* Ajuste de altura do calendário */
 .fc-view-harness.fc-view-harness-active {
   height: 690px !important;
 }
+/* Ajuste nos botões */
+.fc-button {
+  background-color: #2e2e5e !important;
+  border-color: #2e2e5e !important;
+}
+.fc-button-active {
+  border: 2px solid white !important;
+}
+/* Ajustes no range de dias da semana */
+h2#fc-dom-1.fc-toolbar-title {
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (max-width: 767px){
+    h2#fc-dom-1.fc-toolbar-title {
+      font-size: 20px;
+    }
+}
+@media screen and (max-width: 523px){
+  h2#fc-dom-1.fc-toolbar-title {
+    font-size: 15px;
+  }
+}
 
+/* AJUSTES NO MODAL DE DETALHAMENTO DO EVENTO */
+
+.btn.btn-primary#add-to-calendar {
+  background-color: #2e2e5e !important;
+  border-color: white;
+}
 div.event-section {
   padding: 10px;
   border: 1px solid white;
 }
+
+/* AJUSTES DE ESTILO DO CARROSSEL */
 
 .slick-slide > div {
   margin-left: 10px;
