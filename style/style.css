@@ -11968,3 +11968,13 @@ div.event-section {
   margin-left: 10px;
   /* min-width: 200px; */
 }
+
+.btn.btn-primary.btn-lg {
+  background-color: #2e2e5e;
+  border-color: #2e2e5e;
+  margin: 0 auto;
+}
+
+div.link-section {
+  display: flex;
+}
