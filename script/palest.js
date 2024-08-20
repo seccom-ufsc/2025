@@ -79,10 +79,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       
       if (personInfo.email) {
-        palestContactEmail.href = personInfo ? `mailto:${personInfo.email}`
-        palestContactEmail.remove
+        palestContactEmail.href = `mailto:${personInfo.email}`;
+        palestContactEmail.classList.remove("disabled");
       }
-      palestContactEmail.href = `mailto:${personInfo.email}`
+      if (personInfo.github) {
+        palestContactGithub.href = personInfo.github;
+        palestContactGithub.classList.remove("disabled");
+      }
 
     }
   });
