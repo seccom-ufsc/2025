@@ -12025,3 +12025,24 @@ a.disabled > div{
 a.disabled > div > i {
   color: gray;
 }
+
+.palest-contact > a {
+  width: 100%;
+  height: 100%;
+}
+
+a#palest-contect-email, a#palest-contect-github {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+a#palest-contect-email>div, a#palest-contect-github>div {
+  width: 100%;
+  height: 100%;
+}
+
+a#palest-contect-email>div>i, a#palest-contect-github>div>i {
+  width: 100%;
+  height: 100%;
+}
