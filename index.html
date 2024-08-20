@@ -4,37 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SECCOM 2024</title>
+
   <link rel="icon" type="image/x-icon" href="/img/tmp-logo.png">
-  
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/carrossel.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.css' rel='stylesheet' />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-  <link rel="icon" type="image/x-icon" href="/img/tmp-logo.png">
+  <link rel="stylesheet" href="style/carrossel.css">
   <link rel="stylesheet" href="style/style.css">
-
+  
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <!-- Full Calendar -->
-  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.css' rel='stylesheet' />
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.15/index.global.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.15/index.global.min.js'></script>
 
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script
-			  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-			  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-			  crossorigin="anonymous"></script>
+
+  <!-- Carousel -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   
   <script src="script/matrix.js" defer></script>
   <script src="script/calendar.js" defer></script>
   <script src="script/palest.js" defer></script>
 </head>
+
+<body>
+  <!-- #region Header -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -76,14 +74,12 @@
 
     </div>
   </nav>
+  <!-- #endregion -->
 
   <canvas id="canv"></canvas>
-  <main
-  data-bs-spy="scroll"
-  data-bs-target="#navbarNav"
-  >
-  <!-- #region INICIO -->
-  <section id="inicio" class="container d-flex align-items-center">
+  <main data-bs-spy="scroll" data-bs-target="#navbarNav">
+    <!-- #region INICIO -->
+    <section id="inicio" class="container d-flex align-items-center">
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
@@ -93,7 +89,7 @@
             De 22 a 27 de Setembro
           </p>
           <p>
-            A SECCOM é um evento acadêmico que visa incrementar a experiência universitária das graduações em Ciência da Computação e Sistemas de Informação, trazendo palestras e oficinas de conteúdos além dos vistos durante a graduação. Esta edição será online e ocorrerá nos dias 6 a 10 de dezembro, com seus eventos ocorrendo majoritariamente no período da tarde. Você pode assistir as transmissões ao vivo no <a href="https://www.youtube.com/channel/UCva2-CmrvppJlf8jSAK61vw" target="_blank">canal oficial da SECCOM no YouTube</a>.
+            A SECCOM é um evento acadêmico que visa incrementar a experiência universitária das graduações em Ciência da Computação e Sistemas de Informação, trazendo palestras e oficinas de conteúdos além dos vistos durante a graduação. Você pode assistir as transmissões ao vivo no <a href="https://www.youtube.com/channel/UCva2-CmrvppJlf8jSAK61vw" target="_blank">canal oficial da SECCOM no YouTube</a>.
           </p>
         </div>
         <div class="col-lg-2"></div>
@@ -103,8 +99,9 @@
 
     <!-- #region PROGRAMACAO -->
     <section id="program" class="container mb-5 pb-3">
-      <h2 class="display-6 text-center pb-5">Programação</h2>
+      <h2>Programação</h2>
       <div id="calendar"></div>
+
       <!-- Bootstrap Modal -->
       <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -153,7 +150,7 @@
 
     <!-- #region PALESTRANTES -->
     <section id="palest" class="container mb-5 pb-3">
-      <h2 class="display-6 text-center">Palestrantes</h2>
+      <h2>Palestrantes</h2>
       <div class = "carrossel">
         <!-- <div class = "carrossel-item ms-3"> -->
         <div class="card carrossel-item" style="width: 18rem;">
@@ -232,40 +229,56 @@
     </section>
     <!-- #endregion -->
 
-    <section id="hackaton" class="container mb-5 pb-3">
-      <h2 class="display-6 text-center">Hackaton</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate rerum provident, facilis voluptatum beatae sapiente repellendus ex velit veniam cum reprehenderit officiis dolore. Non expedita obcaecati molestiae iste modi?</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sequi doloremque ullam quae earum? Autem suscipit quo provident minus, amet sapiente quaerat mollitia facere labore quas dolorem atque rem! Quam.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae quae nemo fugiat asperiores adipisci, iste vero nulla facere neque. Vel, in! Nostrum accusamus nam consequuntur in, magnam molestiae odio.</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita esse eligendi voluptates quaerat quo possimus, quidem vitae, omnis eius cumque corrupti iure perspiciatis nesciunt dolorem corporis numquam, perferendis dolorum natus.</p>
-      <p><strong>O que é necessário para participar?</strong></p>
-      <ul>
-        <li>Se inscrever</li>
-        <li>Um time</li>
-      </ul>
-      <div class="link-section">
-        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Inscreva-se para o hackaton</a>
+    <!-- #region HACKATON -->
+    <section id="hackaton" class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <h2>Hackaton</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate rerum provident, facilis voluptatum beatae sapiente repellendus ex velit veniam cum reprehenderit officiis dolore. Non expedita obcaecati molestiae iste modi?</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sequi doloremque ullam quae earum? Autem suscipit quo provident minus, amet sapiente quaerat mollitia facere labore quas dolorem atque rem! Quam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae quae nemo fugiat asperiores adipisci, iste vero nulla facere neque. Vel, in! Nostrum accusamus nam consequuntur in, magnam molestiae odio.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita esse eligendi voluptates quaerat quo possimus, quidem vitae, omnis eius cumque corrupti iure perspiciatis nesciunt dolorem corporis numquam, perferendis dolorum natus.</p>
+          <p><strong>O que é necessário para participar?</strong></p>
+          <ul>
+            <li>Se inscrever</li>
+            <li>Um time</li>
+          </ul>
+          <div class="d-flex justify-content-end">
+            <a href="#" class="btn btn-primary" role="button" aria-pressed="true">Inscreva-se para o hackaton</a>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
       </div>
     </section>
+    <!-- #endregion -->
 
-    <section id="maratona" class="container mb-5 pb-3">
-      <h2 class="display-6 text-center mb-3">Maratona de Programação</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea mollitia error nesciunt ratione soluta, iure amet vel tempora placeat eos itaque eaque quasi accusamus vero laudantium laborum quibusdam labore?</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ut dolorum quasi deserunt nesciunt quo saepe voluptatibus maxime eum, voluptate aut nisi quibusdam mollitia exercitationem esse accusantium, unde recusandae. Maiores.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae placeat unde dignissimos odio ex error! Labore rem, illo nesciunt eos unde fugiat vero ipsum neque, fuga doloremque quia beatae.</p>
-      <ol>
-        <li>Inscreva-se</li>
-        <li>Compareça na sala X no dia Y</li>
-        <li>Divirta-se!</li>
-      </ol>
-      <div class="link-section">
-        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Inscreva-se para a maratona</a>
+    <!-- #region MARATONA -->
+    <section id="maratona" class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <h2>Maratona de Programação</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea mollitia error nesciunt ratione soluta, iure amet vel tempora placeat eos itaque eaque quasi accusamus vero laudantium laborum quibusdam labore?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ut dolorum quasi deserunt nesciunt quo saepe voluptatibus maxime eum, voluptate aut nisi quibusdam mollitia exercitationem esse accusantium, unde recusandae. Maiores.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae placeat unde dignissimos odio ex error! Labore rem, illo nesciunt eos unde fugiat vero ipsum neque, fuga doloremque quia beatae.</p>
+          <ol>
+            <li>Inscreva-se</li>
+            <li>Compareça na sala X no dia Y</li>
+            <li>Divirta-se!</li>
+          </ol>
+          <div class="d-flex justify-content-end">
+            <a href="#" class="btn btn-primary" role="button" aria-pressed="true">Inscreva-se para a maratona</a>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
       </div>
     </section>
+    <!-- #endregion -->
 
     <!-- #region CONTATO -->
     <section id="contato" class="container">
-      <h2 class="display-6 text-center">Quer falar com a gente?</h2>
+      <h2>Quer falar com a gente?</h2>
       <div class="contact-row">
 
         <a href="https://www.facebook.com/seccom.ufsc" target="_blank">
@@ -307,7 +320,6 @@
       </div>
     </section>
     <!-- #endregion -->
-
   </main>
 
   <footer></footer>
