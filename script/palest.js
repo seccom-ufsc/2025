@@ -54,13 +54,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const palestModal = document.getElementById('palestModal');
   const palestContactEmail = document.getElementById('palest-contect-email')
   const palestContactGithub = document.getElementById('palest-contect-github')
-  
+
   palestModal.addEventListener('show.bs.modal', function (event) {
     const button = event.relatedTarget;
     const personName = button.getAttribute('data-person');
     const personPhoto = button.getAttribute('data-img-src');
     
     const personInfo = peopleInfo[personName];
+
+    palestContactEmail.href = "#"
+    palestContactEmail.classList.add("disabled")
+    palestContactGithub.href = "#"
+    palestContactGithub.classList.add("disabled")
 
     
     if (personInfo) {
