@@ -30,9 +30,21 @@ const peopleInfo = {
     name: "John Doe",
     abstract: "A short description about John Doe.",
     events: [
-      { title: "Palestra1", date: "22/09", start: "12:00", end: "14:00"},
-      { title: "Palestra2", date: "22/09", start: "12:00", end: "14:00"}
-    ]
+      { title: "Palestra1"},
+      { title: "Palestra2"}
+    ],
+    github: "https://github.com/seccom-ufsc",
+    email: ""
+  },
+  "Jane Doe": {
+    name: "Jane Doe",
+    abstract: "A short description about Jane Doe.",
+    events: [
+      { title: "Palestra3"},
+      { title: "Palestra4"}
+    ],
+    github: "https://github.com/seccom-ufsc",
+    email: "seccom.ufsc@gmail.com"
   }
 };
 
@@ -40,6 +52,8 @@ const peopleInfo = {
 
 document.addEventListener('DOMContentLoaded', function () {
   const palestModal = document.getElementById('palestModal');
+  const palestContactEmail = document.getElementById('palest-contect-email')
+  const palestContactGithub = document.getElementById('palest-contect-github')
   
   palestModal.addEventListener('show.bs.modal', function (event) {
     const button = event.relatedTarget;
@@ -60,9 +74,16 @@ document.addEventListener('DOMContentLoaded', function () {
       palestElement.innerHTML = '';  // Clear previous content
       personInfo.events.forEach(event => {
         const li = document.createElement('li');
-        li.innerHTML = `<b>${event.title}</b> - ${event.date} (${event.start} até ${event.end})`;
+        li.innerHTML = `<b>${event.title}</b>`;
         palestElement.appendChild(li);
       });
+      
+      if (personInfo.email) {
+        palestContactEmail.href = personInfo ? `mailto:${personInfo.email}`
+        palestContactEmail.remove
+      }
+      palestContactEmail.href = `mailto:${personInfo.email}`
+
     }
   });
 });

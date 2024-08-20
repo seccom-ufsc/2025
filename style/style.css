@@ -12014,3 +12014,14 @@ div.carrossel-item {
 }
 
 /*# sourceMappingURL=style.css.map */
+a.disabled {
+  pointer-events: none;
+}
+
+a.disabled > div{
+  background-color: #2e2e5e22;
+}
+
+a.disabled > div > i {
+  color: gray;
+}
