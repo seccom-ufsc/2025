@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         themeSystem: 'bootstrap5',
         initialView: 'timeGridWeek',
         validRange: {
-            start: '2024-09-22',
-            end: '2024-09-28'
+            start: '2024-10-20',
+            end: '2024-10-26'
         },
         slotMinTime: '10:00:00',
         slotMaxTime: '23:00:00',
