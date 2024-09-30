@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-bs-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
   <link rel="icon" type="image/x-icon" href="/img/tmp-logo.png">
   <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.css' rel='stylesheet' />
   <link rel="stylesheet" href="style/style.css">
-  
+
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
   <!-- Full Calendar -->
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
@@ -20,14 +22,14 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <!-- Carousel -->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   
+  <script src="script/speakers.js" defer></script>
   <script src="script/matrix.js" defer></script>
   <script src="script/calendar.js" defer></script>
-  <script src="script/palest.js" defer></script>
 </head>
 
 <body>
@@ -118,8 +120,8 @@
             <div class="modal-body">
               <div id="modal-event-title">
                 <!-- <div class="mb-2 mt-3"> -->
-                  <!-- <strong>Título</strong> -->
-                  <h3 id="section-title"></h3>
+                <!-- <strong>Título</strong> -->
+                <h3 id="section-title"></h3>
                 <!-- </div> -->
               </div>
               <div id="modal-event-description">
@@ -154,88 +156,46 @@
     <!-- #endregion -->
 
     <!-- #region PALESTRANTES -->
-    <!-- <section id="palest" class="container mb-5 pb-3">
+    <section id="speakers" class="container mb-5 pb-3">
       <h2>Palestrantes</h2>
-      <div class = "carrossel">
-        <div class="card carrossel-item" style="width: 18rem;">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">John Doe</h5>
-            <p class="card-text">CEO & Founder, Example.</p>
-            <button type="button"
-              class="btn main-bg-color main-border-color"
-              data-bs-toggle="modal"
-              data-bs-target="#palestModal"
-              data-person="John Doe"
-              data-img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s" >
-              Saiba +
-            </button>
-          </div>
-        </div>
-        <div class = "carrossel-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
-          <h3>John Doe</h3>
-          <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
-          <h3>John Doe</h3>
-          <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
-          <h3>John Doe</h3>
-          <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
-          <h3>John Doe</h3>
-          <p class="title">CEO & Founder, Example</p></div>
-        <div class = "carrossel-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s"/>
-          <h3>John Doe</h3>
-          <p class="title">CEO & Founder, Example</p></div>
-      </div>
-      <div class="modal fade" id="palestModal" tabindex="-1" aria-labelledby="palestModalLabel" aria-hidden="true">
+      <div id="carrossel" class="carrossel"></div>
+      <div class="modal fade" id="speakerModal" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="palestModalLabel">Modal title</h1>
+              <h1 class="modal-title fs-5" id="speakerModalLabel">
+                Modal title
+              </h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="d-flex justify-content-center">
-                <img id="modal-palest-photo"/>
+                <img id="modal-speaker-photo" />
               </div>
-              <div id="modal-palest-abstract">
+              <div id="modal-speaker-abstract">
                 <div class="mb-2 mt-3">
                   <strong>Resumo</strong>
                 </div>
-                <div id="palest-abstract" class="event-section"></div>
+                <div id="speaker-abstract" class="event-section"></div>
               </div>
-              <div id="modal-palest-lectures">
+              <div id="modal-speaker-lectures">
                 <div class="mb-2 mt-3">
                   <strong>Eventos</strong>
                 </div>
-                <div id="palest-events" class="event-section"></div>
+                <div id="speaker-events" class="event-section"></div>
               </div>
             </div>
-            <div class="modal-footer">
+            <div id="modal-footer" class="modal-footer">
               <p style="margin-right: auto;"><strong>Contatos:</strong></p>
-              <a href="#" class="disabled" target="_blank" id="palest-contect-email">
-                <div class="palest-contact-card">
-                  <i class="bi bi-envelope-fill"></i>
-                </div>
-              </a>
-              <a href="#" class="disabled" target="_blank" id="palest-contect-github">
-                <div class="palest-contact-card">
-                  <i class="bi bi-github"></i>
-                </div>
-              </a>
+              <div id="contact-list" class="contact-list"></div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- #endregion -->
 
+    <!-- #region EVENTOS -->
     <section id="eventos" class="container">
       <div class="row">
         <h2>Eventos & Formulários</h2>
@@ -275,7 +235,7 @@
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                  
+
                   <p>A Maratona de Programação da SECCOM consiste em uma batalha de programação entre equipes. Faça seu time e participe!</p>
                   <p><strong>Data e horário:</strong> 23/10 (quarta-feira) as 13h30.</p>
                   <p><strong>Local:</strong> Sala a definir </p>
@@ -343,7 +303,7 @@
               </h2>
               <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                  
+
                   <p><strong>Data e horário de início:</strong> 21/10 às 18:30.</p>
                   <p><strong>Local:</strong>Auditório do Departamento de Engenharia de Produção e Sistemas (EPS)</p>
                   <p><strong>O que é necessário para participar?</strong></p>
@@ -360,6 +320,7 @@
         </div>
       </div>
     </section>
+    <!-- #endregion EVENTOS -->
 
     <!-- #region CONTATO -->
     <section id="contato" class="container">
@@ -412,4 +373,5 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.js"></script>
 </body>
+
 </html>

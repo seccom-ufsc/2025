@@ -45,7 +45,8 @@ canvas#canv {
   flex-wrap: wrap;
 }
 
-.contact-card, .palest-contact-card {
+.contact-card,
+.speaker-contact-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +62,7 @@ canvas#canv {
   }
 }
 
-div.palest-contact-card {
+div.speaker-contact-card {
   width: 3rem;
   height: 3rem;
 }
@@ -179,30 +180,32 @@ div.carrossel-item {
   object-fit: cover;
 }
 
-a.disabled {
-  pointer-events: none;
-}
+.modal-footer {
+  .contact-list {
+    display: flex;
+    gap: 4px;
+    a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      color: white;
 
-a.disabled > div{
-  background-color: #2e2e5e22;
-}
+      &.disabled {
+        pointer-events: none;
+        background-color: #2e2e5e22;
 
-a.disabled > div > i {
-  color: gray;
-}
+        > div {
+          background-color: #2e2e5e22;
+        }
 
-.palest-contact > a {
-  width: 100%;
-  height: 100%;
-}
+        i {
+          color: gray;
+        }
+      }
+    }
 
-a#palest-contect-email, a#palest-contect-github {
-  display: block;
-  width: 50px;
-  height: 50px;
-  color: white;
-}
-
-a#palest-contect-email>div>i, a#palest-contect-github>div>i {
-  font-size: 30px;
+    i {
+      font-size: 30px;
+    }
+  }
 }
