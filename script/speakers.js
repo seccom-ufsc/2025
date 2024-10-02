@@ -1,191 +1,118 @@
+/**
+ * Speakers data.
+ */
+
 const speakers = {
-  "John Doe": {
-    photo:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s",
+  Ale: {
+    photo: "../img/placeholder-icon.webp",
     title: "Palestrante",
 
-    abstract: "A short description about John Doe.",
-    events: [{ title: "Palestra 1" }, { title: "Palestra 2" }],
+    abstract: "Estou na quarta fase de sistemas e gosto muito de Python!",
+    events: [
+      {
+        title:
+          "Geocodificação em Python: Uma análise para os números de casas desocupadas em Florianópolis",
+      },
+    ],
     contact: {
-      github: "https://github.com/seccom-ufsc",
-      email: "",
+      email: "ale.benedetp@gmail.com",
     },
   },
-  "Jane Doe": {
-    photo:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s",
+  "Cainã Rinaldi Esteche": {
+    photo: "../img/placeholder-icon.webp",
     title: "Palestrante",
 
-    abstract: "A short description about John Doe.",
-    events: [{ title: "Palestra 1" }, { title: "Palestra 2" }],
+    abstract:
+      "Estudante de Ciência da Computação, Medalhista de ouro da OBMEP e CTO da Mimolda. Atleta de vôlei e xadrez e entusiasta por problemas de matemática e computação.",
+    events: [
+      {
+        title:
+          "Dedos, Palitos e Grafos: Vencendo com Matemática – Um Guia para Dominar Jogos de Estratégia",
+      },
+    ],
     contact: {
-      github: "https://github.com/seccom-ufsc",
-      email: "",
+      email: "cairinest@hotmail.com",
     },
   },
-  "Jane Doe 2": {
-    photo:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s",
+  Rafael: {
+    photo: "../img/placeholder-icon.webp",
     title: "Palestrante",
 
-    abstract: "A short description about John Doe.",
-    events: [{ title: "Palestra 1" }, { title: "Palestra 2" }],
+    abstract:
+      "Rafael Oliveira é fundador e Head-Engineer do Osiris, um grupo de pesquisa focado no projeto e desenvolvimento de microarquiteturas RISC-V. Possui experiência em projetos  e caracterização elétrica de circuitos integrados em tecnologias nanométricas. Suas principais áreas de expertise são Projeto de Circuitos Digitais e Circuitos Combinacionais Tolerantes a Falhas. Rafael publicou artigos sobre esses temas em importantes periódicos e conferências. Além disso, atua como Projetista de CI Digital na Chipus Microelectronics e é voluntário no Laboratório de Computação Embarcada (ECL-UFSC).",
+    events: [
+      {
+        title:
+          "Entre Bits e Clocks: Desvendando o Projetos de Circuitos Integrados",
+      },
+    ],
     contact: {
-      github: "https://github.com/seccom-ufsc",
-      email: "",
+      email: "rafaelnevesmello@gmail.com",
     },
   },
-  "Jane Doe 3": {
-    photo:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s",
+  "Mario Araujo Xavier": {
+    photo: "../img/placeholder-icon.webp",
     title: "Palestrante",
 
-    abstract: "A short description about John Doe.",
-    events: [{ title: "Palestra 1" }, { title: "Palestra 2" }],
+    abstract:
+      "Natalense em Florianópolis. Trabalha com infraestrutura, datacenter, virtualização, servidores e nuvem Microsoft Azure, Hyper-V, Windows Server. Já palestrou na Universidade Federal de Santa Catarina (UFSC), Universidade Tecnológica Federal do Paraná (UTFPR), Universidade Federal do Ceará (UFCE), Universidade Federal do Rio Grande do Norte (UFRN) e na Universidade Tiradentes (UNIT) - Recife/PE",
+    events: [
+      {
+        title:
+          "KDE Neon & KDE Plasma: venha para o KDE e ganhe experiencia profissional em TI",
+      },
+      { title: "Oficina de Python para iniciantes" },
+      { title: "Linkedin Avançado" },
+      {
+        title:
+          "FOSSHUB e o desafio de implantar ferramentas livres no mercado corporativo",
+      },
+      { title: "Dokuwiki e a superimportancia da documentacao na TI" },
+    ],
     contact: {
-      github: "https://github.com/seccom-ufsc",
-      email: "",
+      email: "marioaxavier7@gmail.com",
     },
   },
-  "Jane Doe 4": {
-    photo:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJybAolHwkjt556GvzligLSyZZ3D0ugNHkiw&s",
+  "Matheus de Oliveira Saldanha": {
+    photo: "../img/placeholder-icon.webp",
     title: "Palestrante",
 
-    abstract: "A short description about John Doe.",
-    events: [{ title: "Palestra 1" }, { title: "Palestra 2" }],
+    abstract:
+      "Bacharel em Ciências Computação pela UFSC, fazendo parte do LabSEC durante a graduação. Atualmente, mestrando em Ciências da Computação pela UFSC, focando os estudos em Isogeny-based Cryptography e trabalhando como engenheiro de software na Motorola.",
+    events: [
+      { title: "Criptografia da Troca de Chaves: Clássica à Pós-Quântica" },
+    ],
     contact: {
-      github: "https://github.com/seccom-ufsc",
-      email: "",
+      email: "zinhoo02@gmail.com",
+    },
+  },
+  "Samuel Cardoso": {
+    photo: "../img/placeholder-icon.webp",
+    title: "Palestrante",
+
+    abstract:
+      "Me chamo Samuel Cardoso, sou formado em Ciência da Computação pela UFSC e atualmente atuo como Analista de Segurança da Informação na Conviso Appsec, realizando Pentests e outras operações de segurança.",
+    events: [
+      {
+        title:
+          "Como entender vulnerabilidades: Do compilador a ReDoS + Live Hacking",
+      },
+    ],
+    contact: {
+      email: "samuelcardosodejesus@hotmail.com",
+    },
+  },
+  "Carla Merkle Westphall": {
+    photo: "../img/placeholder-icon.webp",
+    title: "Professora",
+
+    abstract:
+      "Carla Merkle Westphall é graduada em Ciências da Computação pela UFSC em 1994, obteve o grau de mestre em Ciência da Computação pela UFSC em 1996 e o grau de Doutora em Engenharia Elétrica na área de Segurança em 2000 pela UFSC. Atua na área de Ciência da Computação desde 1987. Participou de vários projetos de pesquisa na área de Segurança de Sistemas. O projeto atual chama-se Segurança nas Redes da Nova Geração, englobando Internet das coisas, computação em nuvem, computação em névoa e redes sem fio. Este projeto está em desenvolvimento no Laboratório de Redes e Gerência (LRG) da UFSC, com a participação de alunos de doutorado e mestrado no Programa de Pós-Graduação em Ciência da Computação (PPGCC) da UFSC, além de alunos de graduação. Tem interesse pelos seguintes temas de pesquisa: segurança em sistemas distribuídos, redes de nova geração, blockchain, segurança na programação e gerenciamento de identidades.",
+    events: [{ title: "Mesa Redonda" }],
+    contact: {
+      email: "carla.merkle.westphall@ufsc.br",
     },
   },
 };
 
-/**
- * This event is called when the page is loaded.
- * It will populate the carousel with the speakers, initialize the slick
- * carousel and set up the modal to show the speaker information.
- */
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("HERE!");
-
-  const carosel = document.getElementById("carrossel");
-  Object.entries(speakers).forEach(([name, info]) => {
-    console.log(name, info);
-    addSpeakerToCarousel(carosel, name, info);
-  });
-
-  initSlick();
-  setUpSpeakerModal();
-});
-
-/**
- * Sets up the modal to show the speaker information.
- */
-function setUpSpeakerModal() {
-  const modal = document.getElementById("speakerModal");
-
-  modal.addEventListener("show.bs.modal", function (event) {
-    const name = event.relatedTarget.getAttribute("data-person");
-    const info = speakers[name];
-    console.log(name);
-    console.log(info);
-
-    if (info) {
-      /* Header */
-      modal.querySelector(".modal-title").textContent = name;
-      modal.querySelector("#modal-speaker-photo").src = info.photo;
-      modal.querySelector("#speaker-abstract").textContent = info.abstract;
-
-      /* Events */
-      const eventsElement = modal.querySelector("#speaker-events");
-      eventsElement.innerHTML = ""; // Clear previous content
-      info.events.forEach((event) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<b>${event.title}</b>`;
-        eventsElement.appendChild(li);
-      });
-
-      /* Contact list */
-      const contactList = document.getElementById("contact-list");
-      contactList.innerHTML = ""; // Clear previous content
-
-      Object.entries(info.contact).forEach(([name, link]) => {
-        const contact = document.createElement("a");
-        contact.target = "_blank";
-
-        const contactCard = document.createElement("div");
-        contactCard.classList.add("speaker-contact-card");
-        contact.appendChild(contactCard);
-
-        switch (name) {
-          case "email":
-            contact.href = `mailto:${link}`;
-            contactCard.innerHTML = `<i class="bi bi-envelope"></i>`;
-            break;
-          default:
-            contact.href = link;
-            contactCard.innerHTML = `<i class="bi bi-${name}"></i>`;
-        }
-
-        if (!link) {
-          contact.classList.add("disabled");
-        }
-
-        contactList.appendChild(contact);
-      });
-    }
-  });
-}
-
-/**
- * Adds a speaker to the carousel.
- */
-function addSpeakerToCarousel(carosel, speakerName, speakerInfo) {
-  const card = document.createElement("div");
-  card.classList.add("card", "carrossel-item");
-  card.innerHTML = `
-    <img src="${speakerInfo.photo}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${speakerName}</h5>
-      <p class="card-text">${speakerInfo.title}</p>
-      <button type="button" class="btn main-bg-color main-border-color"
-      data-bs-toggle="modal" data-bs-target="#speakerModal" 
-      data-person="${speakerName}">
-        Saiba +
-      </button>
-    </div>
-  `;
-  carosel.appendChild(card);
-}
-
-/**
- * Initializes the slick carousel.
- */
-function initSlick() {
-  $(".carrossel").slick({
-    centerMode: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-}
+export { speakers };
