@@ -4,27 +4,28 @@ $primary: #2e2e5e;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 body {
   scroll-behavior: smooth;
-  font-family: "Roboto Mono", monospace;
-}
-
-main {
-  padding: 1rem 0;
+  font-family: "Fira Code", "Roboto Mono", monospace;
 }
 
 section {
   scroll-margin-top: 80px;
   margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
   &#inicio {
-    height: 100vh;
+    height: calc(100svh - 74px);
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -38,7 +39,7 @@ canvas#canv {
 }
 
 .contact-row {
-  margin: 2rem 0;
+  margin: 0 0 2rem 0;
   display: flex;
   justify-content: center;
   gap: 1rem;
