@@ -244,6 +244,28 @@ const speakers = {
       email: "miliane@bridge.ufsc.br",
     },
   },
+  "Gustavo Zambonin": {
+    photo: "./img/gustavo-zambonin.jpg",
+    title: "Palestrante",
+
+    abstract:
+      "Sou estudante de doutorado no Laboratório de Segurança em Computação, pesquisando novos algoritmos de ranquamento para geração uniforme de objetos aleatórios em criptossistemas resistentes a computadores quânticos. Também trabalho como consultor, auxiliando instituições públicas e privadas a resolver problemas complexos relacionados a segurança da informação. Antes de começar o doutorado, fui líder de pesquisa e desenvolvimento do Padrão Brasileiro de Assinatura Digital da Infraestrutura de Chaves Públicas Brasileira.",
+    events: [{ title: "Geração aleatória de objetos combinatórios para algoritmos criptográficos" }],
+    contact: {
+      email: "gustavo.zambonin@posgrad.ufsc.br",
+    },
+  },
+  "Anthony Kamers": {
+    photo: "./img/anthony-kamers.jpeg",
+    title: "Palestrante",
+
+    abstract:
+      "Sou mestrando no laboratório de segurança em computação (LabSEC) da UFSC, atualmente pesquisando sobre criptografia e assinaturas digitais. Também sou gerente do projeto Padrão Brasileiro de Assinaturas Digitais (PBAD) junto ao LabSEC, que trabalha diretamente com o Instituto de Tecnologia da Informação (ITI).",
+    events: [{ title: "Assinatura digital tolerante a modificações" }],
+    contact: {
+      email: "anthonybernardo10@gmail.com",
+    },
+  },
 };
 
 export { speakers };
