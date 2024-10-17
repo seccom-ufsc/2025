@@ -4,7 +4,7 @@
 
 const speakers = {
   "Ale": {
-    photo: "../img/placeholder-icon.webp",
+    photo: "./img/ale.jpeg",
     title: "Palestrante",
 
     abstract: "Estou na quarta fase de sistemas e gosto muito de Python!",
@@ -19,7 +19,7 @@ const speakers = {
     },
   },
   "Cainã Rinaldi Esteche": {
-    photo: "../img/caina-rinaldi-esteche.jpeg",
+    photo: "./img/caina-rinaldi-esteche.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -37,7 +37,7 @@ const speakers = {
     },
   },
   "Rafael": {
-    photo: "../img/rafael-oliveira.jpeg",
+    photo: "./img/rafael-oliveira.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -53,7 +53,7 @@ const speakers = {
     },
   },
   "Mario Araujo Xavier": {
-    photo: "../img/mario-araujo-xavier.jpeg",
+    photo: "./img/mario-araujo-xavier.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -73,7 +73,7 @@ const speakers = {
     },
   },
   "Matheus de Oliveira Saldanha": {
-    photo: "../img/matheus-saldanha.jpeg",
+    photo: "./img/matheus-saldanha.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -86,7 +86,7 @@ const speakers = {
     },
   },
   "Samuel Cardoso": {
-    photo: "../img/samuel-cardoso.jpeg",
+    photo: "./img/samuel-cardoso.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -102,7 +102,7 @@ const speakers = {
     },
   },
   "Carla Merkle Westphall": {
-    photo: "../img/carla-westphall.jpeg",
+    photo: "./img/carla-westphall.jpeg",
     title: "Painelista",
 
     abstract:
@@ -113,7 +113,7 @@ const speakers = {
     },
   },
   "Jean Everson Martina": {
-    photo: "../img/jean-martina.jpeg",
+    photo: "./img/jean-martina.jpeg",
     title: "Painelista",
 
     abstract:
@@ -124,7 +124,7 @@ const speakers = {
     },
   },
   "Thaís Bardini Idalino": {
-    photo: "../img/thais-bardini.jpeg",
+    photo: "./img/thais-bardini.jpeg",
     title: "Painelista",
 
     abstract:
@@ -135,7 +135,7 @@ const speakers = {
     },
   },
   "Mateus Cechetto": {
-    photo: "../img/matheus-cechetto.jpeg",
+    photo: "./img/matheus-cechetto.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -146,7 +146,7 @@ const speakers = {
     },
   },
   "Eduardo Perottoni": {
-    photo: "../img/eduardo-perottoni.jpeg",
+    photo: "./img/eduardo-perottoni.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -157,7 +157,7 @@ const speakers = {
     },
   },
   "Gustavo": {
-    photo: "../img/Gustavo-Kundlatsch.jpeg",
+    photo: "./img/Gustavo-Kundlatsch.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -168,7 +168,7 @@ const speakers = {
     },
   },
   "Pedro Veiga": {
-    photo: "../img/pedro-veiga.jpeg",
+    photo: "./img/pedro-veiga.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -179,7 +179,7 @@ const speakers = {
     },
   },
   "Claudio Gerolimetto": {
-    photo: "../img/Claudio-Gerolimetto.jpeg",
+    photo: "./img/Claudio-Gerolimetto.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -190,7 +190,7 @@ const speakers = {
     },
   },
   "Luciano Faustino": {
-    photo: "../img/luciano-faustino.jpeg",
+    photo: "./img/luciano-faustino.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -201,7 +201,7 @@ const speakers = {
     },
   },
   "Ricardo Goes": {
-    photo: "../img/ricardo-goes.jpeg",
+    photo: "./img/ricardo-goes.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -212,7 +212,7 @@ const speakers = {
     },
   },
   "Bruno Muniz": {
-    photo: "../img/bruno-muniz.jpeg",
+    photo: "./img/bruno-muniz.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -223,7 +223,7 @@ const speakers = {
     },
   },
   "Shirlei Chaves": {
-    photo: "../img/shirlei-chaves.jpeg",
+    photo: "./img/shirlei-chaves.jpeg",
     title: "Palestrante",
 
     abstract:
@@ -234,7 +234,7 @@ const speakers = {
     },
   },
   "Miliane Fantonelli": {
-    photo: "../img/miliane-fantonelli.jpeg",
+    photo: "./img/miliane-fantonelli.jpeg",
     title: "Palestrante",
 
     abstract:
