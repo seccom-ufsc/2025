@@ -4,7 +4,7 @@
 
 const speakers = {
   "Ale": {
-    photo: "./img/ale.jpeg",
+    photo: "./img/ale.jpg",
     title: "Palestrante",
 
     abstract: "Estou na quarta fase de sistemas e gosto muito de Python!",
