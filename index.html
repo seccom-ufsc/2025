@@ -18,9 +18,8 @@
   <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.15/index.global.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.15/index.global.min.js'></script>
 
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
   <!-- Carousel -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -28,7 +27,7 @@
 
   <script src="script/matrix.js" defer></script>
   <script src="script/calendar.js" defer></script>
-  <script src="script/palest.js" defer></script>
+  <script src="script/speakersCarousel.js" type="module" defer></script>
 </head>
 
 <body>
@@ -55,7 +54,7 @@
             <a class="nav-link" href="#program">Programação</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#eventos">Formulários</a>
+            <a class="nav-link" href="#speakers">Palestrantes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contato">Contato</a>
@@ -163,7 +162,47 @@
     </section>
     <!-- #endregion -->
 
+    <!-- #region PALESTRANTES -->
+    <section id="speakers" class="container mb-5 pb-3">
+      <h2>Palestrantes</h2>
+      <div id="carrossel" class="carrossel"></div>
+      <div class="modal modal-lg fade" id="speakerModal" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="speakerModalLabel">
+                Modal title
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center">
+                <img id="modal-speaker-photo" />
+              </div>
+              <div id="modal-speaker-abstract">
+                <div class="mb-2 mt-3">
+                  <strong>Sobre mim</strong>
+                </div>
+                <div id="speaker-abstract"></div>
+              </div>
+              <div id="modal-speaker-lectures">
+                <div class="mb-2 mt-3">
+                  <strong>Eventos</strong>
+                </div>
+                <ul id="speaker-events"></ul>
+              </div>
+            </div>
+            <div id="modal-footer" class="modal-footer">
+              <p style="margin-right: auto;"><strong>Contatos:</strong></p>
+              <div id="contact-list" class="contact-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion -->
 
+    <!-- #region EVENTOS -->
     <section id="eventos" class="container d-flex align-items-center">
       <div class="row">
         <!-- <div class="col-lg-2"></div> -->
@@ -360,6 +399,7 @@
         </div>
       </div>
     </section>
+    <!-- #endregion EVENTOS -->
 
     <!-- #region CONTATO -->
     <section id="contato" class="container d-flex flex-column justify-content-center" style="min-height: 30svh;">
