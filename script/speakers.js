@@ -266,6 +266,17 @@ const speakers = {
       email: "anthonybernardo10@gmail.com",
     },
   },
+  "Wellington Silvano": {
+    photo: "./img/wellington-silvano.jpeg",
+    title: "Palestrante",
+
+    abstract:
+      'Wellington Fernandes Silvano é doutorando em Ciências da Computação pela Universidade Federal de Santa Catarina (UFSC) e membro do Laboratório de Segurança em Computação (LabSEC). Suas pesquisas se concentram em sigilo de documentos de longo prazo, com ênfase em técnicas como assinaturas digitais sigilosas, criptografia avançada, secret sharing, controle de acesso e mitigação de vazamentos. O objetivo de seu trabalho é garantir a integridade e sigilo de informações ao longo do tempo, incluindo o desenvolvimento de novas soluções para a gestão e arquivamento seguro de documentos. Com formação acadêmica diversificada, Wellington possui mestrado em Tecnologia da Informação e Comunicação e graduação em Física, ambos pela UFSC. Foi premiado no "Brazilian Symposium on Computing Systems Engineering (SBESC)", teve um trabalho selecionado pela revista Future Generation Computer Systems como destaque em 2021. Também atuou como revisor para o IEEE Internet of Things Journal. Sua experiência abrange temas como segurança da computação e tecnologias da informação, atualmente com foco em soluções inovadoras para o sigilo.',
+    events: [{ title: "Sigilo sob uma perspectiva prioritariamente computacional" }],
+    contact: {
+      email: "anthonybernardo10@gmail.com",
+    },
+  },
 };
 
 export { speakers };
