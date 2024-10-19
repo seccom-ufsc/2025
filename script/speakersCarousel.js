@@ -106,7 +106,7 @@ function initSlick() {
   $(".carrossel").slick({
     centerMode: true,
     slidesToShow: 3,
-    dots: true,
+    dots: false,
     // mobileFirst: true,
     autoplay: true,
     responsive: [

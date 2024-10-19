@@ -277,6 +277,46 @@ const speakers = {
       email: "anthonybernardo10@gmail.com",
     },
   },
+  "Pâmela Nunes": {
+    photo: "./img/pamela-nunes.jpg",
+    title: "Palestrante",
+
+    abstract: "Data Product Manager, formada em Ciências Biológicas na UFSC, mestre e doutoranda em Educação Científica e Tecnológica.",
+    events: [{ title: "Passado, Presente e Futuro do Trabalho com Dados" }],
+    contact: {
+      email: "pamela.nunes@indicium.tech",
+    },
+  },
+  "Brian Henkels": {
+    photo: "./img/brian-henkels.jpg",
+    title: "Palestrante",
+
+    abstract: "Consultor de Business Intelligence com mais de 17 anos de experiência em TI e mais de 7 anos em Data Analytics e Engenharia de Dados. Egresso de Sistemas de Informação da UFSC.",
+    events: [{ title: "Power BI para profissionais" }],
+    contact: {
+      email: "brianhenkels@gmail.com",
+    },
+  },
+  "Derick Andrighetti": {
+    photo: "./img/derick-andrighetti.jpg",
+    title: "Palestrante",
+
+    abstract: "Derick Andrighetti é graduando em Tecnologias da Informação e Comunicação pela Universidade Federal de Santa Catarina (UFSC). Atualmente, Derick é Analista de Segurança da Informação no Laboratório Bridge da UFSC, onde contribui para o desenvolvimento de soluções inovadoras na área de segurança cibernética. Além disso, Derick é Pentester Freelancer, aplicando sua expertise em testes de invasão para avaliar e fortalecer a segurança de sistemas. Por fim, realizou uma Iniciação Científica no Laboratório de Experimentos Remotos (RExLab/UFSC).",
+    events: [{ title: "Segurança ofensiva: Hackeie sistemas e seja pago por isso" }],
+    contact: {
+      linkedin: "https://www.linkedin.com/in/derick-andrighetti",
+    },
+  },
+  "Roberto Filho": {
+    photo: "./img/roberto-filho.jpg",
+    title: "Palestrante",
+
+    abstract: 'Roberto Rodrigues Filho é Professor Adjunto no Departamento de Computação (DEC) da Universidade Federal de Santa Catarina (UFSC), onde atua na área de Sistemas de Computação, ministrando aulas para graduação e desenvolvendo pesquisa na área de Sistemas Distribuídos Auto-adaptativos e Emergentes. É doutor em Ciência da Computação pela Universidade de Lancaster, Reino Unido (2018). É também mestre e bacharel em Ciência da Computação pelo Instituto de Informática da Universidade Federal de Goiás, Brasil (2013). Foi pós-doutorando no Instituto de Computação da Universidade Estadual de Campinas (IC/Unicamp). Durante esse período, foi bolsista da Fundação de Desenvolvimento da Unicamp (FUNCAMP) em projeto financiado pela Ericsson Research, e desenvolveu pesquisa sobre a aplicação de técnicas de sistemas auto-adaptativos e autonômicos em alocação de serviços e recursos em infraestruturas de computação contínua. Fez estágio pós-doutoral no Instituto de Informática da Universidade Federal de Goiás (INF-UFG), financiado pela Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP), em um projeto sobre "Composição Autonômica de Sistemas de Software para Cidades Inteligentes". Foi também Pesquisador Associado (Postdoctoral Research Associate) na Universidade de Lancaster, no Reino Unido (2017-2020), financiado pelo Leverhulme Trust UK, e desenvolveu pesquisas sobre o tópico: "The Emergent Self-Aware Data Centre: Autonomous Software Landscaping at Scale". Durante esse período também foi pesquisador visitante no IRISA/INRIA na Universidade de Rennes 1, durante o verão de 2019, na França. Em 2018, foi convidado a participar do prestigiado ciclo de seminários na Schloss Dagstuhl (Alemanha), onde ministrou palestra e participou de discussões sobre o tema "Software Engineering for Intelligent and Autonomous Systems (SEfIAS)". Sua principal área de pesquisa é Computação Autonômica com ênfase em Sistemas Emergentes Distribuídos e Auto-organizáveis.',
+    events: [{ title: "Segurança ofensiva: Hackeie sistemas e seja pago por isso" }],
+    contact: {
+      email: "roberto.filho@ufsc.br",
+    },
+  },
 };
 
 export { speakers };
