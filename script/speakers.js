@@ -317,6 +317,16 @@ const speakers = {
       email: "roberto.filho@ufsc.br",
     },
   },
+  "Ronaldo dos Santos Mello": {
+    photo: "./img/ronaldo-mello.jpeg",
+    title: "Palestrante",
+
+    abstract: 'Professor titular da UFSC. Possui bacharelado, mestrado e doutorado em Ciência da Computação pela UFRGS. Sua pesquisa está concentrada na área de Banco de Dados, com foco atual em modelagem e integração de Big Data, projeto de bancos de dados NoSQL, interoperabilidade entre bancos de dados relacionais e NoSQL e persistência poliglota de dados.',
+    events: [{ title: "Tratamento de Dados JSON em Bancos de Dados" }],
+    contact: {
+      email: "r.mello@ufsc.br",
+    },
+  },
 };
 
 export { speakers };
