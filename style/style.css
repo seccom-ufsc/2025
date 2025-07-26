@@ -12000,6 +12000,11 @@ img.deco.corner-3 {
   top: 0;
   right: 0;
 }
+@media (max-width: 768px) {
+  img.deco.corner-1 {
+    display: none;
+  }
+}
 
 /* Modal de detalhamento do evento */
 div.event-section {

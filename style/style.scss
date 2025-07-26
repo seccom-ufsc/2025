@@ -150,6 +150,12 @@ img.deco {
     top: 0;
     right: 0;
   }
+
+  @media (max-width: 768px) {
+  &.corner-1 {
+    display: none;
+  }
+}
 }
 
 /* Modal de detalhamento do evento */
