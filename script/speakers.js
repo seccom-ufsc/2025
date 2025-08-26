@@ -3,19 +3,19 @@
  */
 
 const speakers = {
-  "Ale": {
-    photo: "./img/ale.jpg",
+  "Giulia Bordignon": {
+    photo: "./img/Giulia-Bordignon.jpg",
     title: "Palestrante",
 
-    abstract: "Estou na quarta fase de sistemas e gosto muito de Python!",
+    abstract: "Mestra em engenharia de computação e desenvolvedora backend. Através da criação de conteúdos, sonho impactar vidas de forma positiva com rompimento de barreiras e empoderamento tecnológico, reconstruindo a área tecnológica como um espaço acessível e pertencente a todas as pessoas.",
     events: [
       {
         title:
-          "Geocodificação em Python: Uma análise para os números de casas desocupadas em Florianópolis",
+          "Mulheres na TI: Como sobreviver em uma área majoritariamente masculina?",
       },
     ],
     contact: {
-      email: "ale.benedetp@gmail.com",
+      email: "contato@spacecoding.dev",
     },
   },
   "Cainã Rinaldi Esteche": {
