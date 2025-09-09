@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             end: '2025-10-04'
         },
         slotMinTime: '10:00:00',
-        slotMaxTime: '23:00:00',
+        slotMaxTime: '20:00:00',
         googleCalendarApiKey: 'AIzaSyAo0eHM7AxQS0v4HZ01CwXdvbq4h-_ZCS4',
         events: {
             googleCalendarId: '28516cb404c13f958c1b24a3e914b13efa359c71f39400b5ae457b0978b45838@group.calendar.google.com'
