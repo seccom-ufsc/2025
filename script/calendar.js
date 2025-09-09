@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             start: '2025-09-28',
             end: '2025-10-04'
         },
-        slotMinTime: '10:00:00',
+        slotMinTime: '09:00:00',
         slotMaxTime: '20:00:00',
         googleCalendarApiKey: 'AIzaSyAo0eHM7AxQS0v4HZ01CwXdvbq4h-_ZCS4',
         events: {
