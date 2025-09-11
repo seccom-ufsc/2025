@@ -47,7 +47,7 @@ const speakers = {
       email: "",
     },
   },
-  "Harryson Silva": {
+  "Harrysson Silva": {
     photo: "./img/speakers/Harryson-Silva.jpeg",
     title: "Palestrante",
 
