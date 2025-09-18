@@ -231,6 +231,19 @@ const speakers = {
       lattes: "http://lattes.cnpq.br/2106496100470299",
       email: "maicon.zatelli@ufsc.br",
     }
+  },
+  "João Braz da Silva": {
+    photo: "./img/speakers/Joao_Braz.jpeg",
+    title: "Palestrante",
+    abstract: 'É superintendente da Fundação CITeB (Centro de Inovação e Tecnologia da Região de Biguaçu). Também é idealizador do CITeB. Atua fortemente no ecossistema de inovação local, com projetos de incubação, pesquisa & desenvolvimento, programas de capacitação empreendedora, espaços de coworking/hub, e articulação entre governo, empresas, academia e sociedade. Possui Mestrado em Engenharia de Produção pela Universidade Federal de Santa Catarina (UFSC), com período aproximado de 2001 a 2004. Graduação em Ciências Contábeis (Bacharelado) pela Universidade Federal de Santa Catarina (1989‑1994).',
+    events: [
+      {
+        title: "O Futuro das Startups: Tecnologias Emergentes que Estão Redefinindo Negócios. Como Pequenos Negócios Podem se Digitalizar?"
+      },
+    ],
+    contact: {
+      linkedin: "https://www.linkedin.com/in/jo%C3%A3obraz67/",
+    }
   }
 };
 
