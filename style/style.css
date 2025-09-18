@@ -12104,4 +12104,14 @@ footer {
   height: 5rem;
 }
 
+.bi-lattes {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("./../img/Lattes.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+}
+
 /*# sourceMappingURL=style.css.map */
