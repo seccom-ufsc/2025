@@ -120,20 +120,20 @@ const speakers = {
       email: "patrikloff@gmail.com",
     }
   },
-  "Lucas Lazarini": {
-    photo: "./img/speakers/Lucas_Lazarini.jpg",
-    title: "Palestrante",
-    abstract: "Sou Lucas Lazarini, estudante da 8ª fase do curso de Sistemas de Informação na Universidade Federal de Santa Catarina (UFSC). Atualmente, atuo como Desenvolvedor de Software na VAAS e possuo mais de 3 anos de experiência na área de tecnologia. Ao longo da minha trajetória, participei do desenvolvimento de sistemas distribuídos utilizados por milhares de usuários e da definição de arquiteturas que suportam integrações complexas e requisitos de alta disponibilidade.",
-    events: [
-      {
-        title: "Event Sourcing: A Arquitetura por Trás de Sistemas Consistentes e Auditáveis em Escala"
-      },
-    ],
-    contact: {
-      linkedin: "https://www.linkedin.com/in/lucas-lazarini/",
-      email: "lucasalmeidalazarini@gmail.com",
-    }
-  },
+  // "Lucas Lazarini": {
+  //   photo: "./img/speakers/Lucas_Lazarini.jpg",
+  //   title: "Palestrante",
+  //   abstract: "Sou Lucas Lazarini, estudante da 8ª fase do curso de Sistemas de Informação na Universidade Federal de Santa Catarina (UFSC). Atualmente, atuo como Desenvolvedor de Software na VAAS e possuo mais de 3 anos de experiência na área de tecnologia. Ao longo da minha trajetória, participei do desenvolvimento de sistemas distribuídos utilizados por milhares de usuários e da definição de arquiteturas que suportam integrações complexas e requisitos de alta disponibilidade.",
+  //   events: [
+  //     {
+  //       title: "Event Sourcing: A Arquitetura por Trás de Sistemas Consistentes e Auditáveis em Escala"
+  //     },
+  //   ],
+  //   contact: {
+  //     linkedin: "https://www.linkedin.com/in/lucas-lazarini/",
+  //     email: "lucasalmeidalazarini@gmail.com",
+  //   }
+  // },
   "Ruan Luiz M. Lopes": {
     photo: "./img/speakers/Ruan_Luiz_Molgero_Lopes.jpg",
     title: "Palestrante",
