@@ -244,7 +244,20 @@ const speakers = {
     contact: {
       linkedin: "https://www.linkedin.com/in/jo%C3%A3obraz67/",
     }
-  }
+  },
+  "Marcos Herve": {
+    photo: "./img/speakers/Marcos_Herve.png",
+    title: "Palestrante",
+    abstract: 'Marcos Barcellos Hervé é engenheiro eletricista formado pela Universidade Federal do Rio Grande do Sul (UFRGS), Brasil, em 2006 e mestre em microeletrônica pela mesma universidade em 2009 (PGMicro). Participou da primeira turma do curso de formação em projetista de circuitos integrados do programa CI Brasil entre 2008 e 2009 com ênfase em circuitos digitais. Tem mais de 10 anos de experiência em microeletrônica, desde o início do mestrado na área, atuando em projetos de pesquisa e desenvolvimento de circuitos integrados. Nesse período, atuou em projetos de circuitos integrados de RFID, Power Management e compressão de dados, tendo participado de todas as etapas do fluxo de design digital. Desde janeiro de 2017 faz parte da equipe da Chipus Microeletrônica atuando atualmente como gerente de projetos.',
+    events: [ 
+      {
+        title: "Digital IC Design: Opportunities and Challenges",
+      }
+    ],
+    contact: {
+      lattes: "http://lattes.cnpq.br/9976288871389616",
+    }
+  },
 };
 
 export { speakers };
