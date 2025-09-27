@@ -271,6 +271,19 @@ const speakers = {
       linkedin: "https://www.linkedin.com/in/gabriel-novak/",
     }
   },
+  "Carlos Libardo": {
+    photo: "./img/speakers/carlos_libardo.jpg",
+    title: "Palestrante",
+    abstract: 'Fundador da Voltbras, pioneira na América Latina em gestão de recarga de veículos elétricos, onde liderei todo o desenvolvimento tecnológico — da ideia inicial até a criação de soluções whitelabel escaláveis. Com experiência em desenvolvimento Full Stack (React, React Native e TypeScript), arquitetura de sistemas distribuídos e automação de deploy mobile, atuo também em áreas como Design System multiplataforma, DevOps e monitoramento de sistemas. Além da parte técnica, tenho forte atuação em liderança de equipes em ambientes ágeis, modelagem de produtos e visão estratégica de negócios, sempre buscando alinhar inovação tecnológica com impacto real no mercado.',
+    events: [ 
+      {
+        title: "Construindo Agentes de IA com Mastra",
+      }
+    ],
+    contact: {
+      linkedin: "https://www.linkedin.com/in/carlos-eduardo-libardo-530086149/",
+    }
+  },
 };
 
 export { speakers };
