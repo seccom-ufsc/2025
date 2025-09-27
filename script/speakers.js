@@ -258,6 +258,19 @@ const speakers = {
       lattes: "http://lattes.cnpq.br/9976288871389616",
     }
   },
+  "Gabriel Novak": {
+    photo: "./img/speakers/gabriel_novak.jpg",
+    title: "Palestrante",
+    abstract: 'Ex-cofundador da Capitalz, uma fintech de crédito voltada para empresas de médio porte, incorporada pela Stark em 2022 para criar o primeiro Banco de Investimento Digital do país. Negociei mais de US$ 200 milhões em operações de dívida estruturada e transações de M&A. Apaixonado por tecnologia e inovação, tornei-me cofundador e COO da Blockful, uma empresa de tecnologia que desenvolve Public Goods, soluções open source e ferramentas de governança para DAOs e ecossistemas descentralizados.',
+    events: [ 
+      {
+        title: "Blockchain e Protocolos DeFi: Entendendo a Revolução Financeira Descentralizada",
+      }
+    ],
+    contact: {
+      linkedin: "https://www.linkedin.com/in/gabriel-novak/",
+    }
+  },
 };
 
 export { speakers };
